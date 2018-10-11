@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="431_DEV">
+	<Version>1.0</Version>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
+	<FILEREF>
+		<ARXML>Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>PortInterfaces.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/WindowCtrl.arxml</ARXML>
+		<DVG>ComponentTypes/WindowCtrl.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/switchDetector.arxml</ARXML>
+		<DVG>ComponentTypes/switchDetector.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/motorControl.arxml</ARXML>
+		<DVG>ComponentTypes/motorControl.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/pinchDetector.arxml</ARXML>
+		<DVG>ComponentTypes/pinchDetector.dvg</DVG>
+	</FILEREF>
+</DCF>
