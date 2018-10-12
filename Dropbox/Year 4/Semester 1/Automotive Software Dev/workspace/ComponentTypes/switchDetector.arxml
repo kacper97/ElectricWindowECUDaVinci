@@ -100,6 +100,17 @@
                   </DATA-IREF>
                 </DATA-RECEIVED-EVENT>
               </EVENTS>
+              <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                <VARIABLE-DATA-PROTOTYPE UUID="D0FC8698-7F4A-41DD-9C26-2760A541E510">
+                  <SHORT-NAME>windowPosition</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>1</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </VARIABLE-DATA-PROTOTYPE>
+              </EXPLICIT-INTER-RUNNABLE-VARIABLES>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="D3F16ABE-27E3-49D8-A6DD-ADB789A57EB0">
                   <SHORT-NAME>switchDetector_Init</SHORT-NAME>
@@ -131,6 +142,14 @@
                     </VARIABLE-ACCESS>
                   </DATA-SEND-POINTS>
                   <SYMBOL>switchDetector_Init</SYMBOL>
+                  <WRITTEN-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="1A70371C-893F-4942-A6A1-52C7819A7A38">
+                      <SHORT-NAME>WRITE_windowPosition</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/switchDetector/switchDetector_InternalBehavior/windowPosition</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </WRITTEN-LOCAL-VARIABLES>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="DA362D8C-CF88-46D0-9108-DF0E625E3369">
                   <SHORT-NAME>SwitchEventHandler</SHORT-NAME>
@@ -174,7 +193,23 @@
                       </ACCESSED-VARIABLE>
                     </VARIABLE-ACCESS>
                   </DATA-SEND-POINTS>
+                  <READ-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="A4D22E1A-700B-42FB-AB0D-061468FE1662">
+                      <SHORT-NAME>Read_windowPosition</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/switchDetector/switchDetector_InternalBehavior/windowPosition</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </READ-LOCAL-VARIABLES>
                   <SYMBOL>SwitchEventHandler</SYMBOL>
+                  <WRITTEN-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="851BD4BF-A328-4817-9FFE-41AB4AB28CC5">
+                      <SHORT-NAME>WRITE_windowPosition</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/switchDetector/switchDetector_InternalBehavior/windowPosition</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </WRITTEN-LOCAL-VARIABLES>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
             </SWC-INTERNAL-BEHAVIOR>
