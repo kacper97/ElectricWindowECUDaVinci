@@ -2,6 +2,14 @@
 <!--This file was saved with a tool from Vector Informatik GmbH-->
 <AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00044.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <AR-PACKAGES>
+    <AR-PACKAGE UUID="1D937501-8403-484C-A0D0-5F12B7974C3B">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="AD25A32A-F65B-479D-B33B-ED8D11EB97EA">
+          <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
     <AR-PACKAGE UUID="B9D866B6-51D2-43BD-83CC-522B5459DAC6">
       <SHORT-NAME>AUTOSAR_Platform</SHORT-NAME>
       <AR-PACKAGES>
@@ -1486,6 +1494,26 @@ For example: 1, 0, 126, +10.</L-2>
     </AR-PACKAGE>
     <AR-PACKAGE UUID="86D0DB2A-F9CB-4F1F-B431-7DB39706B82A">
       <SHORT-NAME>DataTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="BA8726BC-AE62-4764-B3E6-FF3C59680A1D">
+          <SHORT-NAME>Units</SHORT-NAME>
+          <ELEMENTS>
+            <UNIT UUID="F23D9D3D-EDF7-4428-8E87-64AA96BBA21D">
+              <SHORT-NAME>metres</SHORT-NAME>
+              <DISPLAY-NAME>metres</DISPLAY-NAME>
+            </UNIT>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="D0A38164-2E58-4E92-8731-7A6F561D645B">
+          <SHORT-NAME>CompuMethods</SHORT-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="1A6BF090-682C-4459-9778-E4A9EAB3E2BD">
+          <SHORT-NAME>DataConstrs</SHORT-NAME>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="8A1E8026-971B-4EC6-BA9F-9E72F2049C74">
+      <SHORT-NAME>windowECUDataTypes</SHORT-NAME>
       <ELEMENTS>
         <APPLICATION-PRIMITIVE-DATA-TYPE UUID="8598FC15-6D2F-49DB-8E41-E907D1B537D7">
           <SHORT-NAME>position</SHORT-NAME>
@@ -1494,23 +1522,64 @@ For example: 1, 0, 126, +10.</L-2>
             <SW-DATA-DEF-PROPS-VARIANTS>
               <SW-DATA-DEF-PROPS-CONDITIONAL>
                 <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
-                <UNIT-REF DEST="UNIT">/DataTypes/Units/mm</UNIT-REF>
+                <COMPU-METHOD-REF DEST="COMPU-METHOD">/windowECUDataTypes/mm_to_metres</COMPU-METHOD-REF>
+                <DATA-CONSTR-REF DEST="DATA-CONSTR">/windowECUDataTypes/position_limits</DATA-CONSTR-REF>
+                <UNIT-REF DEST="UNIT">/windowECUDataTypes/mm</UNIT-REF>
               </SW-DATA-DEF-PROPS-CONDITIONAL>
             </SW-DATA-DEF-PROPS-VARIANTS>
           </SW-DATA-DEF-PROPS>
         </APPLICATION-PRIMITIVE-DATA-TYPE>
+        <UNIT UUID="4483A6FB-1046-45D4-90AC-ACAEAD01B9F2">
+          <SHORT-NAME>mm</SHORT-NAME>
+          <DISPLAY-NAME>mm</DISPLAY-NAME>
+        </UNIT>
+        <COMPU-METHOD UUID="8C1D93B0-A1C5-47CE-991F-E6CD43635D40">
+          <SHORT-NAME>mm_to_metres</SHORT-NAME>
+          <CATEGORY>LINEAR</CATEGORY>
+          <UNIT-REF DEST="UNIT">/DataTypes/Units/metres</UNIT-REF>
+          <COMPU-INTERNAL-TO-PHYS>
+            <COMPU-SCALES>
+              <COMPU-SCALE>
+                <SHORT-LABEL>CompuScale</SHORT-LABEL>
+                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0.0</LOWER-LIMIT>
+                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0.0</UPPER-LIMIT>
+                <COMPU-RATIONAL-COEFFS>
+                  <COMPU-NUMERATOR>
+                    <V>0</V>
+                    <V>0.0001</V>
+                  </COMPU-NUMERATOR>
+                  <COMPU-DENOMINATOR>
+                    <V>1</V>
+                  </COMPU-DENOMINATOR>
+                </COMPU-RATIONAL-COEFFS>
+              </COMPU-SCALE>
+            </COMPU-SCALES>
+            <COMPU-DEFAULT-VALUE>
+              <V>0</V>
+            </COMPU-DEFAULT-VALUE>
+          </COMPU-INTERNAL-TO-PHYS>
+        </COMPU-METHOD>
+        <DATA-CONSTR UUID="7D735536-B28E-4B15-87DA-CF97995726E1">
+          <SHORT-NAME>position_limits</SHORT-NAME>
+          <DATA-CONSTR-RULES>
+            <DATA-CONSTR-RULE>
+              <INTERNAL-CONSTRS>
+                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">500</UPPER-LIMIT>
+              </INTERNAL-CONSTRS>
+            </DATA-CONSTR-RULE>
+          </DATA-CONSTR-RULES>
+        </DATA-CONSTR>
+        <DATA-TYPE-MAPPING-SET UUID="6BFA90A9-FBEE-4849-B7A4-1393CE00DAEA">
+          <SHORT-NAME>windowEcuMapping</SHORT-NAME>
+          <DATA-TYPE-MAPS>
+            <DATA-TYPE-MAP>
+              <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/windowECUDataTypes/position</APPLICATION-DATA-TYPE-REF>
+              <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+            </DATA-TYPE-MAP>
+          </DATA-TYPE-MAPS>
+        </DATA-TYPE-MAPPING-SET>
       </ELEMENTS>
-      <AR-PACKAGES>
-        <AR-PACKAGE UUID="BA8726BC-AE62-4764-B3E6-FF3C59680A1D">
-          <SHORT-NAME>Units</SHORT-NAME>
-          <ELEMENTS>
-            <UNIT UUID="4483A6FB-1046-45D4-90AC-ACAEAD01B9F2">
-              <SHORT-NAME>mm</SHORT-NAME>
-              <DISPLAY-NAME>mm</DISPLAY-NAME>
-            </UNIT>
-          </ELEMENTS>
-        </AR-PACKAGE>
-      </AR-PACKAGES>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>
