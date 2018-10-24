@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="421">
+	<NAME>Demo</NAME>
+	<ATTRDEF>Demo_attr_def.xml</ATTRDEF>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<PROJECTASSISTANT>..\..\Demo.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtApMySwc.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtApMySwc_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtApMySwc.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtCoApplication.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtCoApplication_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtCoApplication.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtCryptoDemo.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtCryptoDemo_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtCryptoDemo.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtDiagDemo.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtDiagDemo_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtDiagDemo.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtDltDemo.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtDltDemo_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtDltDemo.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtE2eCommunication.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtE2eCommunication_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtE2eCommunication.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtFimDemo.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtFimDemo_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtFimDemo.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\ctNvApp.arxml</ARXML>
+		<GENATTR>ComponentTypes\ctNvApp_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\ctNvApp.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaDoor.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtSaDoor_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtSaDoor.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaInteriorLight.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtSaInteriorLight_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtSaInteriorLight.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaLightDimControl.arxml</ARXML>
+		<GENATTR>ComponentTypes\CtSaLightDimControl_gen_attr.xml</GENATTR>
+		<DCB>ComponentTypes\CtSaLightDimControl.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="CONSTANT" TYPE="">Constants.arxml</ARXML>
+		<GENATTR>Constants_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="DATATYPE" TYPE="">DataTypes.arxml</ARXML>
+		<GENATTR>DataTypes_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="ECUPROJECT" TYPE="LOCAL">ECUProjects\Demo.arxml</ARXML>
+		<GENATTR>ECUProjects\Demo_gen_attr.xml</GENATTR>
+		<DCB>ECUProjects\Demo.dcb</DCB>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PACKAGE" TYPE="">Packages.arxml</ARXML>
+		<GENATTR>Packages_gen_attr.xml</GENATTR>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PORTINTERFACE" TYPE="">PortInterfaces.arxml</ARXML>
+		<GENATTR>PortInterfaces_gen_attr.xml</GENATTR>
+	</FILEREF>
+</DCF>

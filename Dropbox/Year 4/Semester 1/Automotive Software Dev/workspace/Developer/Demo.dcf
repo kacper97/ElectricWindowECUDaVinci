@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DCF ARSCHEMA="421_DEV">
+	<Version>1.0</Version>
+	<NAME>Demo</NAME>
+	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
+	<PROJECTASSISTANT>..\..\Demo.dpa</PROJECTASSISTANT>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtApMySwc.arxml</ARXML>
+		<DVG>ComponentTypes\CtApMySwc.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtCoApplication.arxml</ARXML>
+		<DVG>ComponentTypes\CtCoApplication.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtCryptoDemo.arxml</ARXML>
+		<DVG>ComponentTypes\CtCryptoDemo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtDiagDemo.arxml</ARXML>
+		<DVG>ComponentTypes\CtDiagDemo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtDltDemo.arxml</ARXML>
+		<DVG>ComponentTypes\CtDltDemo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtE2eCommunication.arxml</ARXML>
+		<DVG>ComponentTypes\CtE2eCommunication.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtFimDemo.arxml</ARXML>
+		<DVG>ComponentTypes\CtFimDemo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\ctNvApp.arxml</ARXML>
+		<DVG>ComponentTypes\ctNvApp.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaDoor.arxml</ARXML>
+		<DVG>ComponentTypes\CtSaDoor.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaInteriorLight.arxml</ARXML>
+		<DVG>ComponentTypes\CtSaInteriorLight.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="COMPONENTTYPE" TYPE="">ComponentTypes\CtSaLightDimControl.arxml</ARXML>
+		<DVG>ComponentTypes\CtSaLightDimControl.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="CONSTANT" TYPE="">Constants.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="DATATYPE" TYPE="">DataTypes.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="ECUPROJECT" TYPE="LOCAL">ECUProjects\Demo.arxml</ARXML>
+		<DVG>ECUProjects\Demo.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PACKAGE" TYPE="">Packages.arxml</ARXML>
+	</FILEREF>
+	<FILEREF>
+		<ARXML ROOTITEM="PORTINTERFACE" TYPE="">PortInterfaces.arxml</ARXML>
+	</FILEREF>
+</DCF>

@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="778DE440-12B3-4C20-9567-E87CB119992B">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="4A0C21DA-BB2E-442C-B92A-B53EA150D941">
+          <SHORT-NAME>CtApMySwc</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="788DD750-2F38-4900-9481-73092130B759">
+              <SHORT-NAME>CSDataServices_Data_PID_0x12_DID_Data</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x12_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x12_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5BEDAF33-2C86-4FB6-8306-AEC23548BE48">
+              <SHORT-NAME>CSDataServices_Data_PID_0x13_DID_Data</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x13_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x13_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0E832DCF-B278-482B-9C2B-57EB3C8670C4">
+              <SHORT-NAME>DataServices_Boot_Software_NumberOfModules</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="95D081AA-08FD-4D62-80A5-F0A56ED06BB1">
+              <SHORT-NAME>DataServices_Data_Boot_Software_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0F60C552-B5A5-469F-9A32-C0E699E0737C">
+              <SHORT-NAME>DataServices_Data_DataDiagnosticIdentifier_DID_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="067A0536-6059-4D58-A360-C1CA37857DBC">
+              <SHORT-NAME>DataServices_Data_DevelopmentData_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5A9C04DC-9BEC-42CB-82B5-ECB74ACDE8E6">
+              <SHORT-NAME>DataServices_Data_DID_0xF410_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="29ED20E5-8AA5-4722-B12F-4BA413544D17">
+              <SHORT-NAME>DataServices_Data_DID_0xF412_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0D0B74D1-4C30-4B03-AF60-7FFA3AAF7046">
+              <SHORT-NAME>DataServices_Data_DID_0xF413_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="AEC6E0E7-920B-4C28-8D3B-698EB7211EC0">
+              <SHORT-NAME>DataServices_Data_EcuIdentification_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="887BB52E-5BC9-4F20-B9B4-EE197C9FE875">
+              <SHORT-NAME>DataServices_Data_Example_ReadOnlyDID_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="27511755-4480-4898-A464-ADA79927398B">
+              <SHORT-NAME>DataServices_Data_Example_ReadWriteData_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="7CBF117C-DB80-4532-AE17-FB6C8D023EF4">
+              <SHORT-NAME>DataServices_Data_Example_WriteOnlyDID_Write</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_WriteOnlyDID_DID_DataObject/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_WriteOnlyDID_DID_DataObject</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="ED0B9A53-E8B5-48FB-A604-EFB7A7CC38CD">
+              <SHORT-NAME>DataServices_Data_Hardware_Version_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="C0FACAD6-0821-4680-B7FA-75F4AF370098">
+              <SHORT-NAME>DataServices_Data_PeriodicDataSample_Send_once</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_PeriodicDataSample_DataRecord/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_PeriodicDataSample_DataRecord/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_PeriodicDataSample_DataRecord</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8878376E-1F15-4044-B3EC-738F629E9980">
+              <SHORT-NAME>DataServices_Data_SampleIoControl_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/FreezeCurrentState</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ResetToDefault</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ReturnControlToECU</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ShortTermAdjustment</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A66E1A52-F5CA-4053-8B10-F12C9D1CB8FB">
+              <SHORT-NAME>DataServices_Data_SerialNumber_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8BAA655A-A23D-4988-963C-5F11134F2ADF">
+              <SHORT-NAME>DataServices_Data_Spare_Part_Number_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="C13A857F-3FBD-4E3E-B979-193274E58EBF">
+              <SHORT-NAME>DataServices_Data_Vehicle_Identification_Read</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="C230C54B-500B-4A13-8690-FE51D006C920">
+              <SHORT-NAME>DataServices_DevelopmentData_DiagnosticModuleVersion</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="18E4C81B-02AB-456E-9866-963F0AB00FAB">
+              <SHORT-NAME>DataServices_DevelopmentData_NmVersion</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5F71CA23-5440-4D20-83A4-554C01084F7D">
+              <SHORT-NAME>DataServices_DevelopmentData_OperatingSystemVersion</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="DCB057D9-27DD-4DA0-B60F-3F198D6D06E7">
+              <SHORT-NAME>DataServices_DevelopmentData_TransportLayerVersion</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/ConditionCheckRead</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/ReadData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/WriteData</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="A5EF6690-1B46-4729-B6C5-A6196666CDCD">
+              <SHORT-NAME>PpLightStateFront</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CLightOff</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightState</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="E3E8A185-2236-4B03-816F-03431B9CFA7C">
+              <SHORT-NAME>PpLightStateRear</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CLightOff</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightState</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="EAA2A67B-CBF4-4B4C-B533-FF3B5F389C29">
+              <SHORT-NAME>RoutineServices_Routine_SampleRoutineControl_Start</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/RequestResults</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/Start</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/Stop</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8C9D9652-6CF3-401B-B86C-80424DDDC2F9">
+              <SHORT-NAME>RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly/RequestResults</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly/Start</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1E1F0D15-F96E-4E20-8284-0EB478E8092C">
+              <SHORT-NAME>SecurityAccess_Level_3</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_3/CompareKey</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_3/GetSeed</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_3</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="CF3584BD-72FE-41D6-895D-C9CC743CB43F">
+              <SHORT-NAME>SecurityAccess_UnlockedL1</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/CompareKey</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/GetSeed</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="DC41EC3C-C210-4AAB-9C51-EE770B90AFCA">
+              <SHORT-NAME>ServiceRequestNotification_Manufacturer</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Confirmation</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Indication</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="6EB082B6-4B13-41D6-998E-3DE46FA4EA3C">
+              <SHORT-NAME>ServiceRequestNotification_Supplier</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Confirmation</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Indication</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6939A7D8-A227-44AA-830B-043052286437">
+              <SHORT-NAME>ApMySwc_ResetConfirmation</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/ResetConfirmation/ConfirmReset</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterfaces/ResetConfirmation</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="BB32BED4-F8A8-4096-8932-71407B49E001">
+              <SHORT-NAME>BswM_MSI_ESH_Mode</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <ENHANCED-MODE-API>false</ENHANCED-MODE-API>
+                  <SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="13AB7456-5180-41DF-BF43-41CB26229995">
+              <SHORT-NAME>DcmEcuReset</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <ENHANCED-MODE-API>false</ENHANCED-MODE-API>
+                  <SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="027A0CD7-74DF-46B0-ADA3-8D08A1C31856">
+              <SHORT-NAME>PpAliveSupervision</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="774A63E8-26F8-470C-9691-9F604F6B61BA">
+              <SHORT-NAME>PpDoorStateFrontLeft</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CDoorClosed</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="92171CA8-1B9C-4CCD-809B-96B77E7FABF2">
+              <SHORT-NAME>PpDoorStateFrontRight</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CDoorClosed</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="00EC1809-9DD9-4910-83B7-64E0C2DE8C9B">
+              <SHORT-NAME>PpDoorStateRearLeft</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CDoorClosed</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="96ABD44D-689F-4DF2-9B3A-071D0D6123FC">
+              <SHORT-NAME>PpDoorStateRearRight</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CDoorClosed</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="BA0ED32A-774B-4128-A117-128E328F9E57">
+              <SHORT-NAME>PpLightDimControl</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightDimControl/DeLightDimCtrl</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/CBackLightDimCtrlInit</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightDimControl</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="275D1E62-C575-4E53-85D5-BF6A9D59CC82">
+              <SHORT-NAME>PpOperationCycle_IGNITION</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/OperationCycle/GetOperationCycleState</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/OperationCycle/SetOperationCycleState</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/Dem_swc/Interfaces/OperationCycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="C9540CAD-C159-43C8-A46A-71E2E815F9C5">
+              <SHORT-NAME>PpUserRequestCAN</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="2750A9B1-2E1C-493C-8312-5A14BB0EA2F3">
+              <SHORT-NAME>PpUserRequestFR</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="038EC56B-D9C8-4423-B10D-BF91825B2A9D">
+              <SHORT-NAME>PpUserRequestLIN</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetMaxComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="DAAD0E5E-247D-4A2D-8BBC-F71DB632342E">
+              <SHORT-NAME>WdgM_GlobalMode</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <ENHANCED-MODE-API>false</ENHANCED-MODE-API>
+                  <SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/WdgM_swc/Interfaces/WdgM_GlobalMode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="87348D45-7EBB-42B9-98F2-874469B8F2A5">
+              <SHORT-NAME>WdgM_IndividualMode</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <MODE-SWITCH-RECEIVER-COM-SPEC>
+                  <ENHANCED-MODE-API>false</ENHANCED-MODE-API>
+                  <SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>false</SUPPORTS-ASYNCHRONOUS-MODE-SWITCH>
+                </MODE-SWITCH-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/MICROSAR/WdgM_swc/Interfaces/WdgM_IndividualMode</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="6976BA5A-6EE2-46FB-A0A5-D0F78E485749">
+              <SHORT-NAME>CtApMySwc_InternalBehavior</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/ComponentTypes/DataTypeMappingSets/DemoTypeMapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <OPERATION-INVOKED-EVENT UUID="EE7E7D74-CF56-4AC8-9759-27D371CCC88F">
+                  <SHORT-NAME>OIT_CtApMySwc_CSDataServices_Data_PID_0x12_DID_Data_ReadData_CSDataServices_Data_PID_0x12_DID_Data_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_CSDataServices_Data_PID_0x12_DID_Data_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/CSDataServices_Data_PID_0x12_DID_Data</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x12_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="17042AB2-0526-4B99-97AE-105F7C3FA819">
+                  <SHORT-NAME>OIT_CtApMySwc_CSDataServices_Data_PID_0x13_DID_Data_ReadData_CSDataServices_Data_PID_0x13_DID_Data_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_CSDataServices_Data_PID_0x13_DID_Data_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/CSDataServices_Data_PID_0x13_DID_Data</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dem_swc/Interfaces/CSDataServices_PID_0x13_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2D02B97B-57D6-431E-9858-3ED2DFBA842B">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Boot_Software_NumberOfModules_ConditionCheckRead_DataServices_Boot_Software_NumberOfModules_C3D9222EE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Boot_Software_NumberOfModules_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Boot_Software_NumberOfModules</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="826B5217-B935-42DB-9C96-161BC2F91E05">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Boot_Software_NumberOfModules_ReadData_DataServices_Boot_Software_NumberOfModules_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Boot_Software_NumberOfModules_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Boot_Software_NumberOfModules</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9406DAF3-6BBA-47F5-8592-B38E962F4151">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Boot_Software_NumberOfModules_WriteData_DataServices_Boot_Software_NumberOfModules_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Boot_Software_NumberOfModules_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Boot_Software_NumberOfModules</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_NumberOfModules/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="58AC2292-0FDF-41CB-A8BD-F066424B22E8">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Boot_Software_ConditionCheckRead_DataServices_Data_Boot_Software_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Boot_Software_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Boot_Software_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4FCEFE83-B2D5-44B4-B0AB-93D31DF2703A">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Boot_Software_ReadData_DataServices_Data_Boot_Software_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Boot_Software_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Boot_Software_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8F36D2C9-54B5-4D5E-B7E0-0F947DC3FD31">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Boot_Software_WriteData_DataServices_Data_Boot_Software_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Boot_Software_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Boot_Software_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Boot_Software_Boot_Software_Identification/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="56663AF1-A803-4A25-8BA7-2518D80A799A">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ConditionCheckRead_DataServices_Data_DataDiagnosticIdentifi7C394B35</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DataDiagnosticIdentifier_DID_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="CFCCC456-5C6D-4623-BF0A-5B24DC9BE68F">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ReadData_DataServices_Data_DataDiagnosticIdentifier_DID_Rea6AA9561D</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DataDiagnosticIdentifier_DID_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="61639419-5C6C-4AD0-9C44-43E58841858C">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_WriteData_DataServices_Data_DataDiagnosticIdentifier_DID_ReCD38CD1D</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DataDiagnosticIdentifier_DID_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DataDiagnosticIdentifier_DID_DataDiagnosticIdentifier/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D6CFB59E-83D0-41E4-8355-3A6B1BD4E578">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DevelopmentData_ConditionCheckRead_DataServices_Data_DevelopmentData_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DevelopmentData_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DevelopmentData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C2AD5935-2BA9-4FE1-8049-49756657CE22">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DevelopmentData_ReadData_DataServices_Data_DevelopmentData_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DevelopmentData_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DevelopmentData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E1F74D48-5241-400C-A27D-084E347CBFB5">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DevelopmentData_WriteData_DataServices_Data_DevelopmentData_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DevelopmentData_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DevelopmentData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_CanDriverVersion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="83FCB3B2-52B6-4AD8-A422-AE6D572EB728">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF410_ConditionCheckRead_DataServices_Data_DID_0xF410_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF410_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF410_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="95E40B92-B3BC-4BB7-97AB-9224BE241D6E">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF410_ReadData_DataServices_Data_DID_0xF410_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF410_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF410_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF410_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FBAD215C-E338-4D5F-B354-C7C22C4F827E">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF412_ConditionCheckRead_DataServices_Data_DID_0xF412_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF412_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF412_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="EDEA6201-38D5-4C08-B907-FDA95587F0E4">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF412_ReadData_DataServices_Data_DID_0xF412_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF412_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF412_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF412_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C0C05AF4-774F-41AC-A1F8-071A64A9CBC7">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF413_ConditionCheckRead_DataServices_Data_DID_0xF413_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF413_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF413_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1F08F017-6025-4256-B4AC-87011F9E9EF7">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_DID_0xF413_ReadData_DataServices_Data_DID_0xF413_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_DID_0xF413_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_DID_0xF413_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DID_0xF413_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="83CD8A31-CCEA-411B-8819-21FAEE2E8E21">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_EcuIdentification_ConditionCheckRead_DataServices_Data_EcuIdentification_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_EcuIdentification_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_EcuIdentification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="22AAC689-8961-46EF-BAAE-553741303B02">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_EcuIdentification_ReadData_DataServices_Data_EcuIdentification_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_EcuIdentification_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_EcuIdentification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="672E67A7-68A7-4EFD-804F-66F5C7CF113F">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_EcuIdentification_WriteData_DataServices_Data_EcuIdentification_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_EcuIdentification_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_EcuIdentification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_EcuIdentification_Part_Number/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2FEE160B-A0F2-4CB1-9281-8E4CCC720292">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ConditionCheckRead_DataServices_Data_Example_ReadOnlyDID_Read_ConditAC8C6CD3</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_ReadOnlyDID_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D89C7E5C-D8AE-486D-87C3-53CAA943E4F0">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ReadData_DataServices_Data_Example_ReadOnlyDID_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_ReadOnlyDID_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadOnlyDID_DID_Data_GlobalTime/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4073F009-0712-483E-9E6A-42DA555281FF">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_ReadWriteData_ConditionCheckRead_DataServices_Data_Example_ReadWriteData_Read_Co3BD509C9</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_ReadWriteData_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_ReadWriteData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DF59992B-231D-4069-A2DE-821EF6168CBC">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_ReadWriteData_ReadData_DataServices_Data_Example_ReadWriteData_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_ReadWriteData_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_ReadWriteData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D0435B43-0C33-4FEE-9E71-890DA725F695">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_ReadWriteData_WriteData_DataServices_Data_Example_ReadWriteData_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_ReadWriteData_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_ReadWriteData_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_ReadWriteData_GlobalTime/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F6444084-5354-40F2-A618-878E0A63B882">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Example_WriteOnlyDID_WriteData_DataServices_Data_Example_WriteOnlyDID_Write_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Example_WriteOnlyDID_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Example_WriteOnlyDID_Write</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Example_WriteOnlyDID_DID_DataObject/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A7788AFE-3B97-4D20-AB86-AAD1F79DA59C">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Hardware_Version_ConditionCheckRead_DataServices_Data_Hardware_Version_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Hardware_Version_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Hardware_Version_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="18DBF40A-8EE6-4A78-9B0C-45DE3413AEE9">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Hardware_Version_ReadData_DataServices_Data_Hardware_Version_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Hardware_Version_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Hardware_Version_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="72D61AA6-84B9-44C6-A1B3-3EA1D6187751">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Hardware_Version_WriteData_DataServices_Data_Hardware_Version_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Hardware_Version_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Hardware_Version_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Hardware_Version_Hardware_Version_Number/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C1AEB19D-E7FE-4A21-867A-B3574DB2C33A">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_PeriodicDataSample_ConditionCheckRead_DataServices_Data_PeriodicDataSample_Send_once_ConDEAB29DB</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_PeriodicDataSample_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_PeriodicDataSample_Send_once</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_PeriodicDataSample_DataRecord/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0B8AB94F-721B-46D4-BE05-B6622CAFE792">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_PeriodicDataSample_ReadData_DataServices_Data_PeriodicDataSample_Send_once_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_PeriodicDataSample_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_PeriodicDataSample_Send_once</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_PeriodicDataSample_DataRecord/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="81501614-BF8B-4354-85A4-9803DA729ED0">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SampleIoControl_FreezeCurrentState_DataServices_Data_SampleIoControl_Read_FreezeCurrentState</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SampleIoControl_FreezeCurrentState</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SampleIoControl_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/FreezeCurrentState</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9190DF5A-73FA-4259-BC04-04806FB0CA62">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SampleIoControl_ReadData_DataServices_Data_SampleIoControl_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SampleIoControl_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SampleIoControl_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E41DE47D-6374-4290-B53A-8D39CA7B5D09">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SampleIoControl_ResetToDefault_DataServices_Data_SampleIoControl_Read_ResetToDefault</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SampleIoControl_ResetToDefault</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SampleIoControl_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ResetToDefault</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8332E6BA-4B76-4557-B490-D9A9A1811DD2">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SampleIoControl_ReturnControlToECU_DataServices_Data_SampleIoControl_Read_ReturnControlToECU</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SampleIoControl_ReturnControlToECU</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SampleIoControl_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ReturnControlToECU</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="BC77AE17-5DAC-4325-82E0-CA507CE49739">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SampleIoControl_ShortTermAdjustment_DataServices_Data_SampleIoControl_Read_ShortTermAdjustment</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SampleIoControl_ShortTermAdjustment</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SampleIoControl_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SampleIoControl_DID_Data/ShortTermAdjustment</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="733E5E93-9DFE-4426-A072-F801A14E6F9F">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SerialNumber_ConditionCheckRead_DataServices_Data_SerialNumber_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SerialNumber_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SerialNumber_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="177F9724-E0D9-4168-9658-E3499654559B">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SerialNumber_ReadData_DataServices_Data_SerialNumber_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SerialNumber_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SerialNumber_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B7AE2A21-D962-4C28-8BA7-EB50441D44F9">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_SerialNumber_WriteData_DataServices_Data_SerialNumber_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_SerialNumber_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_SerialNumber_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_SerialNumber_SerialNumber/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FBCC02C4-CAA5-4201-A073-03C19C18202D">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Spare_Part_Number_ConditionCheckRead_DataServices_Data_Spare_Part_Number_Read_ConditionCheckRead</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Spare_Part_Number_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Spare_Part_Number_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="96567885-897D-4919-B755-0593EF8249ED">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Spare_Part_Number_ReadData_DataServices_Data_Spare_Part_Number_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Spare_Part_Number_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Spare_Part_Number_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C14FB602-E804-4CB5-8BF0-960C18CD3C30">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Spare_Part_Number_WriteData_DataServices_Data_Spare_Part_Number_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Spare_Part_Number_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Spare_Part_Number_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Spare_Part_Number_Spare_Part_Number/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="62971E6A-0AF4-41AC-90E4-E1F369865DC7">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Vehicle_Identification_ConditionCheckRead_DataServices_Data_Vehicle_Identification_Read_5BBB2A2C</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Vehicle_Identification_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Vehicle_Identification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C0025304-6C0F-4462-A663-20898C2CBD9B">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Vehicle_Identification_ReadData_DataServices_Data_Vehicle_Identification_Read_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Vehicle_Identification_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Vehicle_Identification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0F3F7886-DA6B-4B6E-90E5-1EAD7287C8C4">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_Data_Vehicle_Identification_WriteData_DataServices_Data_Vehicle_Identification_Read_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_Data_Vehicle_Identification_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_Data_Vehicle_Identification_Read</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_Vehicle_Identification_VIN/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C6604B00-8863-43FF-971B-27CDB6A77F24">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ConditionCheckRead_DataServices_DevelopmentData_Diagn5CC3F13A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_DiagnosticModuleVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="58C4A081-E8D6-40E4-8086-E8DBDB862D10">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ReadData_DataServices_DevelopmentData_DiagnosticModulF7EC85FA</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_DiagnosticModuleVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DE6B5B35-9520-429E-8F78-3D0384A86F18">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_WriteData_DataServices_DevelopmentData_DiagnosticModu3CB1758A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_DiagnosticModuleVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_DiagnosticModuleVersion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="31EBEE7E-A9A3-489B-A101-3A2727E2AB00">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_NmVersion_ConditionCheckRead_DataServices_DevelopmentData_NmVersion_ConditionA9EB025F</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_NmVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_NmVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F2657AAC-3DD9-498C-ABAF-E6485CBA0493">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_NmVersion_ReadData_DataServices_DevelopmentData_NmVersion_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_NmVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_NmVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0ED9F622-65EA-4B80-BC3F-E2A189A03677">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_NmVersion_WriteData_DataServices_DevelopmentData_NmVersion_WriteData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_NmVersion_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_NmVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_NmVersion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B7D130C0-E878-4470-8369-5F62EC254D85">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ConditionCheckRead_DataServices_DevelopmentData_Operat804E2BAF</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_OperatingSystemVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F61C831C-BF4D-4569-B397-28E37060EA34">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ReadData_DataServices_DevelopmentData_OperatingSystemV5FD7B806</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_OperatingSystemVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D8323D95-60E5-4D59-9E29-5C6098AA2009">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_WriteData_DataServices_DevelopmentData_OperatingSystem956672CC</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_OperatingSystemVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_OperatingSystemVersion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="BBC251D1-30B7-45DD-96FC-C832186875AF">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ConditionCheckRead_DataServices_DevelopmentData_TranspoC0DAFF6E</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ConditionCheckRead</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_TransportLayerVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/ConditionCheckRead</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="202899B3-5FDC-4AAD-8564-99D1660D89B7">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ReadData_DataServices_DevelopmentData_TransportLayerVerE5582B0A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_TransportLayerVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A1764C12-2ADF-4FAF-8F3C-978D4EC69713">
+                  <SHORT-NAME>OIT_CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_WriteData_DataServices_DevelopmentData_TransportLayerVeCF447876</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_WriteData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DataServices_DevelopmentData_TransportLayerVersion</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/DataServices_DevelopmentData_TransportLayerVersion/WriteData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <INIT-EVENT UUID="C6F455A5-A36E-445D-9227-6A9EF0878389">
+                  <SHORT-NAME>CtApMySwc_InitEvent</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_Init</START-ON-EVENT-REF>
+                </INIT-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A04524DA-A22D-4C94-9583-5BD0A264C906">
+                  <SHORT-NAME>OIT_CtApMySwc_RoutineServices_Routine_SampleRoutineControl_RequestResults_RoutineServices_Routine_SampleRoutineControl_SC820A625</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_RoutineServices_Routine_SampleRoutineControl_RequestResults</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/RoutineServices_Routine_SampleRoutineControl_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/RequestResults</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="AB2F12C4-F925-4DCF-A3D0-23F165983998">
+                  <SHORT-NAME>OIT_CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Start_RoutineServices_Routine_SampleRoutineControl_Start_Start</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Start</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/RoutineServices_Routine_SampleRoutineControl_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/Start</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="42792AC7-5D52-44C6-8D79-8113A10C2AA7">
+                  <SHORT-NAME>OIT_CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_RequestResults_RoutineServices_Routine_SampleRoutinAAF2470C</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_RequestResults</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly/RequestResults</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C95A168A-45B3-46A4-9E8E-B78E50C001E6">
+                  <SHORT-NAME>OIT_CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_Start_RoutineServices_Routine_SampleRoutineControl_5C795508</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl_StartOnly/Start</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1FF647CD-9A92-4BA7-9349-FDEBA9ABBC3D">
+                  <SHORT-NAME>OIT_CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Stop_RoutineServices_Routine_SampleRoutineControl_Start_Stop</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Stop</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/RoutineServices_Routine_SampleRoutineControl_Start</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/RoutineServices_SampleRoutineControl/Stop</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="A5DB0489-8BFA-4320-A00D-21EF90DE05EE">
+                  <SHORT-NAME>OIT_CtApMySwc_SecurityAccess_Level_3_CompareKey_SecurityAccess_Level_3_CompareKey</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_SecurityAccess_Level_3_CompareKey</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/SecurityAccess_Level_3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_3/CompareKey</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4FDA7C03-5DC3-46C8-972C-75F69F511B4D">
+                  <SHORT-NAME>OIT_CtApMySwc_SecurityAccess_Level_3_GetSeed_SecurityAccess_Level_3_GetSeed</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_SecurityAccess_Level_3_GetSeed</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/SecurityAccess_Level_3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_Level_3/GetSeed</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9746B83A-D766-470A-BF99-7607D5CE98C2">
+                  <SHORT-NAME>OIT_CtApMySwc_SecurityAccess_UnlockedL1_CompareKey_SecurityAccess_UnlockedL1_CompareKey</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_SecurityAccess_UnlockedL1_CompareKey</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/SecurityAccess_UnlockedL1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/CompareKey</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FAF1A20A-7EFD-468E-B70B-5934627DD591">
+                  <SHORT-NAME>OIT_CtApMySwc_SecurityAccess_UnlockedL1_GetSeed_SecurityAccess_UnlockedL1_GetSeed</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/CtApMySwc_SecurityAccess_UnlockedL1_GetSeed</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/SecurityAccess_UnlockedL1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/SecurityAccess_UnlockedL1/GetSeed</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <TIMING-EVENT UUID="CC2AD92B-E14C-4402-BD4D-1B1E1CF94BB9">
+                  <SHORT-NAME>TMT_mySwcRunnable</SHORT-NAME>
+                  <DISABLED-MODE-IREFS>
+                    <DISABLED-MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/BswM_MSI_ESH_Mode</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/BswM_swc/ESH_Mode/SHUTDOWN</TARGET-MODE-DECLARATION-REF>
+                    </DISABLED-MODE-IREF>
+                    <DISABLED-MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/BswM_MSI_ESH_Mode</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/BswM_swc/ESH_Mode/STARTUP</TARGET-MODE-DECLARATION-REF>
+                    </DISABLED-MODE-IREF>
+                    <DISABLED-MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/BswM_MSI_ESH_Mode</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/BswM_swc/Interfaces/BswM_MSI_ESH_Mode/BswM_MDGP_ESH_Mode</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/BswM_swc/ESH_Mode/WAKEUP</TARGET-MODE-DECLARATION-REF>
+                    </DISABLED-MODE-IREF>
+                  </DISABLED-MODE-IREFS>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/RCtApMySwc_20ms</START-ON-EVENT-REF>
+                  <PERIOD>0.02</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="BC0A603D-E002-4687-BBDF-6E0EC01141CB">
+                  <SHORT-NAME>TMT_WdgM_Trigger1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/RCtApMySwcWdgMTrigger1</START-ON-EVENT-REF>
+                  <PERIOD>0.05</PERIOD>
+                </TIMING-EVENT>
+                <SWC-MODE-SWITCH-EVENT UUID="BF5F8964-DDA3-4294-B7FE-D22ED48267B9">
+                  <SHORT-NAME>MST_ResetEcu_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ResetEcu</START-ON-EVENT-REF>
+                  <ACTIVATION>ON-ENTRY</ACTIVATION>
+                  <MODE-IREFS>
+                    <MODE-IREF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/DcmEcuReset</CONTEXT-PORT-REF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/Dcm_swc/Interfaces/DcmEcuReset/DcmEcuReset</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/MICROSAR/Dcm_swc/DcmEcuReset/EXECUTE</TARGET-MODE-DECLARATION-REF>
+                    </MODE-IREF>
+                  </MODE-IREFS>
+                </SWC-MODE-SWITCH-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="45A796D0-D38F-481D-842B-62180E264CA7">
+                  <SHORT-NAME>OIT_ServiceRequestNotification_Confirmation_ServiceRequestNotification_Confirmation</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ServiceRequestNotification_Confirmation</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/ServiceRequestNotification_Manufacturer</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Confirmation</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F797EA38-2404-4338-A7D2-8CE18C92B688">
+                  <SHORT-NAME>OIT_ServiceRequestNotification_Indication_ServiceRequestNotification_Indication</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ServiceRequestNotification_Indication</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/ServiceRequestNotification_Manufacturer</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Indication</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="EA10AEF9-66C9-4CB5-A1CB-D43DD3615382">
+                  <SHORT-NAME>OIT_ServiceRequestNotification_Supplier_Confirmation_ServiceRequestNotification_Supplier_Confirmation</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ServiceRequestNotification_Supplier_Confirmation</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/ServiceRequestNotification_Supplier</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Confirmation</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="57112BA1-E983-49A6-8A80-3905605257FD">
+                  <SHORT-NAME>OIT_ServiceRequestNotification_Supplier_Indication_ServiceRequestNotification_Supplier_Indication</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/ServiceRequestNotification_Supplier_Indication</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/ServiceRequestNotification_Supplier</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/Dcm_swc/Interfaces/ServiceRequestNotification/Indication</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                <VARIABLE-DATA-PROTOTYPE UUID="75E2F059-D344-4D83-A72B-EEBC2CAF68D3">
+                  <SHORT-NAME>irvDoorOldState</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/PlatformTypes/uint8</TYPE-TREF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </VARIABLE-DATA-PROTOTYPE>
+                <VARIABLE-DATA-PROTOTYPE UUID="37CE8109-534D-4BDD-A9EC-2063FBDA2ACE">
+                  <SHORT-NAME>irvOdometer</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/PlatformTypes/uint16</TYPE-TREF>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>0</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </VARIABLE-DATA-PROTOTYPE>
+              </EXPLICIT-INTER-RUNNABLE-VARIABLES>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="E77CE843-AE21-4CC7-8B06-987704A09F28">
+                  <SHORT-NAME>CtApMySwc_CSDataServices_Data_PID_0x12_DID_Data_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_CSDataServices_Data_PID_0x12_DID_Data_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4FCFD51A-39AE-456B-8C86-D73E1C5D8147">
+                  <SHORT-NAME>CtApMySwc_CSDataServices_Data_PID_0x13_DID_Data_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_CSDataServices_Data_PID_0x13_DID_Data_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="38570477-B42E-45A6-B2D9-BDC62A2C74E4">
+                  <SHORT-NAME>CtApMySwc_DataServices_Boot_Software_NumberOfModules_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Boot_Software_NumberOfModules_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9A7ADFC3-BF2D-47B4-905B-74A83A119CA4">
+                  <SHORT-NAME>CtApMySwc_DataServices_Boot_Software_NumberOfModules_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Boot_Software_NumberOfModules_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="BA91775A-5BE8-4001-8CAD-9AB9C6C75EE4">
+                  <SHORT-NAME>CtApMySwc_DataServices_Boot_Software_NumberOfModules_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Boot_Software_NumberOfModules_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B81171D8-C1D7-4C0D-93C3-FDB95ECEF991">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Boot_Software_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Boot_Software_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F5D73A63-CCCD-4B23-9D60-0E3D653A0495">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Boot_Software_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Boot_Software_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="77207AA5-CFB4-42D7-9A8F-E8A2C47CF381">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Boot_Software_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Boot_Software_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1E825678-A43C-43A8-A5A8-0132F9ED0667">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="35918956-C005-4F42-922F-D28D44BAB13D">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="79BD9967-5D1D-4E6B-99A5-D019FA407EBA">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DataDiagnosticIdentifier_DID_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FD52C99E-6B5D-4FCB-B85E-B64349E92515">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DevelopmentData_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DevelopmentData_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="5A28CF3B-DDF0-460E-8715-7F3EE3AFCDBB">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DevelopmentData_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DevelopmentData_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="EABDEFCF-C197-4430-BD33-A16017180CBF">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DevelopmentData_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DevelopmentData_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FB36504A-D41F-4268-A58E-7BCCBF5DE4C9">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF410_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF410_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="3B0A0315-4843-461D-A38B-9EDBF12EE878">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF410_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF410_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D0B2010D-1EDB-4BD1-B2F0-181E8910F8B7">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF412_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF412_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F317E1F2-D527-4924-9DE3-49D705B4E036">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF412_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF412_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4A25702C-AD06-47E4-A1B3-7E9C26A3FD4A">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF413_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF413_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E3FB98F9-2856-4E75-A707-8CD92C8C6F60">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_DID_0xF413_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_DID_0xF413_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B23AE238-6C0C-48E0-B365-784B2C6D420C">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_EcuIdentification_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_EcuIdentification_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="5CBE11FB-1EAE-46BC-8878-E53950820F6C">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_EcuIdentification_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_EcuIdentification_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7A7D91D9-FCB6-475E-BA57-C2D2A1CEEB1C">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_EcuIdentification_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_EcuIdentification_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="AF191BE4-9A00-492B-8A83-F65CBE51EB92">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="683DE3F7-EBAE-4EE6-9E6E-6CAE3F1852B1">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_ReadOnlyDID_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6765288C-78B9-4D87-A6AC-5B1C4A445EB8">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_ReadWriteData_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_ReadWriteData_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="95648336-2A5D-41D0-9661-78FD8B1B0A90">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_ReadWriteData_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_ReadWriteData_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7790566A-92BB-4489-B04C-2CF801ADE3E2">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_ReadWriteData_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_ReadWriteData_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E2DD3E8A-935B-4843-941F-B91F7D2A3544">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Example_WriteOnlyDID_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Example_WriteOnlyDID_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E939F6B2-0F7E-4592-A573-636449E73CD9">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Hardware_Version_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Hardware_Version_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="347434B2-1444-4766-8DA4-2765F2B51755">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Hardware_Version_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Hardware_Version_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4B4A50E2-2992-472A-92E5-3B5EC641AB84">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Hardware_Version_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Hardware_Version_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="B439F9FC-911D-416C-9110-81E541F71C67">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_PeriodicDataSample_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_PeriodicDataSample_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9F58D406-11D4-442C-85BB-AF3454BCFBAE">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_PeriodicDataSample_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_PeriodicDataSample_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="37272F09-E0AD-4A44-8893-FB14B3729097">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SampleIoControl_FreezeCurrentState</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SampleIoControl_FreezeCurrentState</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1C49961C-A760-4F8B-93FA-E0F4774D7D80">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SampleIoControl_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SampleIoControl_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F42E9586-3C58-40E4-A1B9-71A80C722641">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SampleIoControl_ResetToDefault</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SampleIoControl_ResetToDefault</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="02F247D6-1315-4539-8A15-C252F7BBAE76">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SampleIoControl_ReturnControlToECU</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SampleIoControl_ReturnControlToECU</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4FC54C8C-E56B-42C2-B8EA-642B4A53251D">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SampleIoControl_ShortTermAdjustment</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SampleIoControl_ShortTermAdjustment</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6BCAEE69-8286-49C5-9C70-B5C3ADCB2A16">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SerialNumber_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SerialNumber_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="95F75D7E-5431-4FF2-9DC9-F5AACDFCF35F">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SerialNumber_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SerialNumber_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F7140F60-20F3-4E9A-8854-9AC1BFD29027">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_SerialNumber_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_SerialNumber_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F18A84F1-1083-4EAA-957A-2AB214277764">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Spare_Part_Number_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Spare_Part_Number_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="CFC5A998-6C35-4A62-9928-01174172DAAC">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Spare_Part_Number_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Spare_Part_Number_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="34B5E531-4995-4765-A932-3A7E6D174152">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Spare_Part_Number_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Spare_Part_Number_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9DD410B7-9B21-4437-9DC6-E1032FBC4D13">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Vehicle_Identification_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Vehicle_Identification_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0948CBBC-F1CA-4D58-B4E8-00E64CE7E99C">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Vehicle_Identification_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Vehicle_Identification_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="90C993AC-0BEE-46F2-BFED-811BE77F28E0">
+                  <SHORT-NAME>CtApMySwc_DataServices_Data_Vehicle_Identification_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_Data_Vehicle_Identification_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0AD03F82-79F1-408F-A00F-38794689FAC7">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4F526A5C-B2AF-4EC4-90BD-454D0A73B045">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="174F4244-2415-4148-8914-6F70A83B395E">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_DiagnosticModuleVersion_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="61DB8A7A-3F98-4097-804D-70D4776D9D89">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_NmVersion_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_NmVersion_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="CB3444DA-D4E0-4E87-8BF1-41B0030ACFC9">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_NmVersion_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_NmVersion_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6B2B25DD-7302-4B29-9A80-301B777699A5">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_NmVersion_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_NmVersion_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="65D4C118-EBB0-429D-93E7-E70F104E4954">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="FFF420D9-B37F-4E3E-936B-DEA4B68F2851">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F68A044E-0656-406E-807A-0A1795F2A30D">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_OperatingSystemVersion_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="05B2AA81-9503-4D16-82B8-FD081BB0E848">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ConditionCheckRead</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ConditionCheckRead</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="75E35F22-5CBC-4F91-AA1D-943B2D4D4116">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ReadData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6E1BA79A-F961-4863-98B8-F40003ED4C69">
+                  <SHORT-NAME>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_WriteData</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_DataServices_DevelopmentData_TransportLayerVersion_WriteData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="76043ED6-4CA6-4C86-B9F3-AD79C1E29A4D">
+                  <SHORT-NAME>CtApMySwc_Init</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:RunnableKind">
+                        <SD>InitRunnable</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_Init</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="F46C3533-57BF-4E87-A4C3-2A7AB754F5B4">
+                  <SHORT-NAME>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_RequestResults</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_RequestResults</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0B70BB3C-4616-45A4-BF4E-97172E2FB118">
+                  <SHORT-NAME>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Start</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Start</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="186BE6DD-AFD0-4185-B94A-CFB2DD3A3EC6">
+                  <SHORT-NAME>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_RequestResults</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_RequestResults</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="3C5A4ADA-5836-4BB4-99F1-CAB35A879F1E">
+                  <SHORT-NAME>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_StartOnly_Start</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="25A158CC-2FDD-44AA-97DA-EE241C6AF0EB">
+                  <SHORT-NAME>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Stop</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_RoutineServices_Routine_SampleRoutineControl_Stop</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E3A3CF71-5643-490A-BD64-9114D0FE7764">
+                  <SHORT-NAME>CtApMySwc_SecurityAccess_Level_3_CompareKey</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_SecurityAccess_Level_3_CompareKey</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="40BE2696-D039-4D7A-9743-15C7D9CB674B">
+                  <SHORT-NAME>CtApMySwc_SecurityAccess_Level_3_GetSeed</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_SecurityAccess_Level_3_GetSeed</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="CBA8D90E-F982-4BBA-AEC3-D57ACD64739E">
+                  <SHORT-NAME>CtApMySwc_SecurityAccess_UnlockedL1_CompareKey</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_SecurityAccess_UnlockedL1_CompareKey</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0B8F3159-1F59-4F85-8F35-4E8EB39E4D46">
+                  <SHORT-NAME>CtApMySwc_SecurityAccess_UnlockedL1_GetSeed</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CtApMySwc_SecurityAccess_UnlockedL1_GetSeed</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="32DC3C6F-19F6-49A9-AA33-4D9B731C23BE">
+                  <SHORT-NAME>RCtApMySwc_20ms</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="785620DC-7242-4FF5-BE5C-6DB89D0D30E4">
+                      <SHORT-NAME>REC_Backlight_DimControl_Element</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpLightDimControl</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightDimControl/DeLightDimCtrl</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="D4360987-18AD-4423-ADA3-97CB233641C4">
+                      <SHORT-NAME>REC_PpDoorStateFrontLeft_Element</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateFrontLeft</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="4758152B-1CE9-4445-85CE-F5C3DFED3DC0">
+                      <SHORT-NAME>REC_PpDoorStateFrontRight_Element</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateFrontRight</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8EF80490-5DA0-430B-A771-A468E79666F4">
+                      <SHORT-NAME>REC_PpDoorStateRearLeft_DoorState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateRearLeft</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="72CE1AD0-E207-4E4E-A9F1-BAE78321CA29">
+                      <SHORT-NAME>REC_PpDoorStateRearRight_DoorState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpDoorStateRearRight</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="9E5D01AF-334A-493A-977F-DE5A1E71793F">
+                      <SHORT-NAME>SEND_PpRearLight_lightState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpLightStateRear</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="955CA164-DCBC-46D7-B1C9-AE1DF3A598DC">
+                      <SHORT-NAME>SEND_Set_FrontLightState_Element</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpLightStateFront</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/WdgM_GlobalMode</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/WdgM_swc/Interfaces/WdgM_GlobalMode/currentMode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                    <MODE-ACCESS-POINT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/WdgM_IndividualMode</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/WdgM_swc/Interfaces/WdgM_IndividualMode/currentMode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <READ-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="41FA9D7E-2A71-4E69-8C07-E01FFE8C2E99">
+                      <SHORT-NAME>READ_irvDoorOldState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/irvDoorOldState</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="7CC3CA72-96B4-4C21-B0C0-459F22B03B44">
+                      <SHORT-NAME>READ_irvOdometer</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/irvOdometer</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </READ-LOCAL-VARIABLES>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="F713CE82-E3B0-46CB-9FDE-B55192CB1BC8">
+                      <SHORT-NAME>SC_ApMySwc_ResetConfirmation_ConfirmReset</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/ApMySwc_ResetConfirmation</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterfaces/ResetConfirmation/ConfirmReset</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="93DA71BE-0135-4BFA-B367-2495AA091A84">
+                      <SHORT-NAME>SC_ComM_UserRequest_FR_RequestComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestFR</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="861702DD-F3FF-4F92-9E58-49627E37A893">
+                      <SHORT-NAME>SC_ComM_UserRequest_LIN_RequestComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestLIN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="F0565338-A5FF-4468-81B8-C0B644BAACDC">
+                      <SHORT-NAME>SC_ComM_UserRequest_RequestComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/RequestComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="66FEDDE2-B06E-49F6-B5EB-D4CE3D6B2D69">
+                      <SHORT-NAME>SC_PpUserRequestCAN_GetRequestedComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestCAN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetRequestedComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="7813579A-BCDE-4642-B4C4-33213DF966E3">
+                      <SHORT-NAME>SC_PpUserRequestFR_GetCurrentComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestFR</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="E3E5E0A1-BE3E-4937-9E70-7710A81465EB">
+                      <SHORT-NAME>SC_PpUserRequestLIN_GetCurrentComMode</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpUserRequestLIN</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/ComM_swc/Interfaces/ComM_UserRequest/GetCurrentComMode</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RCtApMySwc_20ms</SYMBOL>
+                  <WRITTEN-LOCAL-VARIABLES>
+                    <VARIABLE-ACCESS UUID="CF0FB214-7006-4994-80A2-4859D114DEDC">
+                      <SHORT-NAME>WRITE_irvDoorOldState</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/irvDoorOldState</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="0CC3B641-560D-45DB-9598-16C6940FCC71">
+                      <SHORT-NAME>WRITE_irvOdometer</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior/irvOdometer</LOCAL-VARIABLE-REF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </WRITTEN-LOCAL-VARIABLES>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="E68C6325-D677-45AF-BA32-6A46B5441826">
+                  <SHORT-NAME>RCtApMySwcWdgMTrigger1</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/WdgM_IndividualMode</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/WdgM_swc/Interfaces/WdgM_IndividualMode/currentMode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                    <MODE-ACCESS-POINT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/WdgM_GlobalMode</CONTEXT-R-PORT-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/MICROSAR/WdgM_swc/Interfaces/WdgM_GlobalMode/currentMode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="AE87F3AD-0509-4B78-AD65-9317BEA9B5EC">
+                      <SHORT-NAME>SC_WdgM_AliveSupervision_CheckpointReached</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtApMySwc/PpAliveSupervision</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR/WdgM_swc/Interfaces/WdgM_AliveSupervision/CheckpointReached</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                      <TIMEOUT>0</TIMEOUT>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RCtApMySwcWdgMTrigger1</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="5A67262E-1227-4525-944C-4ADBE4719A11">
+                  <SHORT-NAME>ResetEcu</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ResetEcu</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="2D121AD8-E0C5-4DD6-90BE-03B57430EED0">
+                  <SHORT-NAME>ServiceRequestNotification_Confirmation</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ServiceRequestNotification_Confirmation</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="36131627-8AFE-4252-90B0-4DE93CA5DD5B">
+                  <SHORT-NAME>ServiceRequestNotification_Indication</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ServiceRequestNotification_Indication</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4DDE9BE7-23D1-4D54-A57E-02B0E1BAC526">
+                  <SHORT-NAME>ServiceRequestNotification_Supplier_Confirmation</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ServiceRequestNotification_Supplier_Confirmation</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="61CB9269-B8E3-4CEF-8BDB-50E98780D7F2">
+                  <SHORT-NAME>ServiceRequestNotification_Supplier_Indication</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ServiceRequestNotification_Supplier_Indication</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="D2B93A4E-DFF5-4717-9F24-0D55706956E0">
+          <SHORT-NAME>CtApMySwc_Implementation</SHORT-NAME>
+          <CODE-DESCRIPTORS>
+            <CODE UUID="51177024-6784-4BE3-9868-1885D5319F38">
+              <SHORT-NAME>Default</SHORT-NAME>
+              <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <SHORT-LABEL>Default</SHORT-LABEL>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+              </ARTIFACT-DESCRIPTORS>
+            </CODE>
+          </CODE-DESCRIPTORS>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/CtApMySwc/CtApMySwc_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

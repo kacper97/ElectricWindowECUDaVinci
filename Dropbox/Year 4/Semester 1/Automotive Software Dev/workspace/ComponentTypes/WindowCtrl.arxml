@@ -8,40 +8,6 @@
         <COMPOSITION-SW-COMPONENT-TYPE UUID="AFEECB68-A4F7-42D6-9A9F-F0CC5BC819B5">
           <SHORT-NAME>WindowCtrl</SHORT-NAME>
           <PORTS>
-            <R-PORT-PROTOTYPE UUID="AF295B11-C95B-4D70-A719-B73FF9721953">
-              <SHORT-NAME>upSwitch</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <REQUIRED-COM-SPECS>
-                <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/switchInput/switchState</DATA-ELEMENT-REF>
-                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                </NONQUEUED-RECEIVER-COM-SPEC>
-              </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/switchInput</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="F56496A5-3557-42E8-8328-CBA5852B342B">
-              <SHORT-NAME>downSwitch</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <REQUIRED-COM-SPECS>
-                <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/switchInput/switchState</DATA-ELEMENT-REF>
-                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                </NONQUEUED-RECEIVER-COM-SPEC>
-              </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/switchInput</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="E0CFCAC3-59A9-4961-9BFC-24BF0CA33402">
               <SHORT-NAME>motorSpeed</SHORT-NAME>
               <ADMIN-DATA>
@@ -74,23 +40,6 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/digitalOutput</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="2449476E-E22D-4089-9E0C-D9607B888429">
-              <SHORT-NAME>pinchDetect</SHORT-NAME>
-              <ADMIN-DATA>
-                <SDGS>
-                  <SDG GID="DV:DEV">
-                    <SD GID="DV:ImportModePreset">Keep</SD>
-                  </SDG>
-                </SDGS>
-              </ADMIN-DATA>
-              <REQUIRED-COM-SPECS>
-                <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/analogueInput/ADCinput</DATA-ELEMENT-REF>
-                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
-                </NONQUEUED-RECEIVER-COM-SPEC>
-              </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/analogueInput</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
           </PORTS>
           <COMPONENTS>
             <SW-COMPONENT-PROTOTYPE UUID="9A8CFBCF-1F98-4AB4-B562-658B12045219">
@@ -126,38 +75,41 @@
               </ADMIN-DATA>
               <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/pinchDetector</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="FB7EDEAD-CD6F-4DC5-A4A7-2534C00F425F">
+              <SHORT-NAME>UPswitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/doorSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="1C335FC4-2023-4D19-8564-6FEA044AB4C5">
+              <SHORT-NAME>DOWNswitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/doorSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="14AE8D93-6D44-48E9-BC89-0A6CBB519070">
+              <SHORT-NAME>pinchSwitch</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/pinchSwitch</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
           </COMPONENTS>
           <CONNECTORS>
-            <DELEGATION-SW-CONNECTOR UUID="A3088870-2F46-4A56-834F-D1CE99199B79">
-              <SHORT-NAME>upSwitch_switchDetector_UpSwitchInput</SHORT-NAME>
-              <INNER-PORT-IREF>
-                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/switchDetector</CONTEXT-COMPONENT-REF>
-                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/switchDetector/UpSwitchInput</TARGET-R-PORT-REF>
-                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-              </INNER-PORT-IREF>
-              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/WindowCtrl/upSwitch</OUTER-PORT-REF>
-            </DELEGATION-SW-CONNECTOR>
-            <DELEGATION-SW-CONNECTOR UUID="26CF6190-AEF1-4C57-8D15-16F451CE4636">
-              <SHORT-NAME>downSwitch_switchDetector_DownSwitchInput</SHORT-NAME>
-              <INNER-PORT-IREF>
-                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/switchDetector</CONTEXT-COMPONENT-REF>
-                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/switchDetector/DownSwitchInput</TARGET-R-PORT-REF>
-                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-              </INNER-PORT-IREF>
-              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/WindowCtrl/downSwitch</OUTER-PORT-REF>
-            </DELEGATION-SW-CONNECTOR>
-            <DELEGATION-SW-CONNECTOR UUID="A3073712-73F0-497B-A445-8CD8A62142BE">
-              <SHORT-NAME>pinchDetect_pinchDetector_pinchADC</SHORT-NAME>
-              <INNER-PORT-IREF>
-                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
-                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/pinchDetector</CONTEXT-COMPONENT-REF>
-                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/pinchDetector/pinchADC</TARGET-R-PORT-REF>
-                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
-              </INNER-PORT-IREF>
-              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/WindowCtrl/pinchDetect</OUTER-PORT-REF>
-            </DELEGATION-SW-CONNECTOR>
             <DELEGATION-SW-CONNECTOR UUID="F5893F5A-4084-4E55-83EB-8A1E8E7CDB69">
               <SHORT-NAME>motorControl_motorPWM_motorSpeed</SHORT-NAME>
               <INNER-PORT-IREF>
@@ -198,6 +150,39 @@
               <REQUESTER-IREF>
                 <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/motorControl</CONTEXT-COMPONENT-REF>
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/motorControl/motorOnOff</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="F7981192-2B97-4EAD-A73A-6635B189E055">
+              <SHORT-NAME>UPswitch_switchState_switchDetector_UpSwitchInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/UPswitch</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/doorSwitch/switchState</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/switchDetector</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/switchDetector/UpSwitchInput</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="0FE89184-41D9-4608-8F50-16B0AAF35613">
+              <SHORT-NAME>DOWNswitch_switchState_switchDetector_DownSwitchInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/DOWNswitch</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/doorSwitch/switchState</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/switchDetector</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/switchDetector/DownSwitchInput</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="3BA0BD6E-30E7-4E20-B2A3-5938A7320B17">
+              <SHORT-NAME>pinchSwitch_pinchDetected_pinchDetector_pinchADC</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/pinchSwitch</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/pinchSwitch/pinchDetected</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ComponentTypes/WindowCtrl/pinchDetector</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/pinchDetector/pinchDetect</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
           </CONNECTORS>

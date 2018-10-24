@@ -21,6 +21,9 @@
                 <NONQUEUED-SENDER-COM-SPEC>
                   <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PWMoutput/dutyCycle</DATA-ELEMENT-REF>
                 </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PWMoutput/windowLevel</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PWMoutput</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>

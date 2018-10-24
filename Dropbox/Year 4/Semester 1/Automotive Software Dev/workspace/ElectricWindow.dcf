@@ -28,4 +28,12 @@
 		<ARXML>ComponentTypes/pinchDetector.arxml</ARXML>
 		<DVG>ComponentTypes/pinchDetector.dvg</DVG>
 	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/doorSwitch.arxml</ARXML>
+		<DVG>ComponentTypes/doorSwitch.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Pinch.arxml</ARXML>
+		<DVG>ComponentTypes/Pinch.dvg</DVG>
+	</FILEREF>
 </DCF>

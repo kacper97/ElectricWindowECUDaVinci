@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--This file was saved with a tool from Vector Informatik GmbH-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Constants</SHORT-NAME>
+      <ELEMENTS>
+        <CONSTANT-SPECIFICATION UUID="5BC80472-A9BE-4ED9-8E1E-C6883457005A">
+          <SHORT-NAME>CBackLightDimCtrlInit</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <VALUE-SPEC>
+            <NUMERICAL-VALUE-SPECIFICATION>
+              <VALUE>0</VALUE>
+            </NUMERICAL-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+        <CONSTANT-SPECIFICATION UUID="D9C2C655-409D-4166-A94B-46B6DB5A60C3">
+          <SHORT-NAME>CDoorClosed</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <VALUE-SPEC>
+            <NUMERICAL-VALUE-SPECIFICATION>
+              <VALUE>0</VALUE>
+            </NUMERICAL-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+        <CONSTANT-SPECIFICATION UUID="A8B915EB-EE08-48C1-AAFD-2B3AF9BBA337">
+          <SHORT-NAME>CLightOff</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG">
+                <SD GID="DV_ReadOnly">1</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <VALUE-SPEC>
+            <NUMERICAL-VALUE-SPECIFICATION>
+              <VALUE>0</VALUE>
+            </NUMERICAL-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

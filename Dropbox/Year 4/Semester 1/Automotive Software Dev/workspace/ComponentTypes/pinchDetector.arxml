@@ -9,7 +9,7 @@
           <SHORT-NAME>pinchDetector</SHORT-NAME>
           <PORTS>
             <R-PORT-PROTOTYPE UUID="7E57296F-FAF9-4A91-AF54-471980AFE293">
-              <SHORT-NAME>pinchADC</SHORT-NAME>
+              <SHORT-NAME>pinchDetect</SHORT-NAME>
               <ADMIN-DATA>
                 <SDGS>
                   <SDG GID="DV:DEV">
@@ -19,11 +19,16 @@
               </ADMIN-DATA>
               <REQUIRED-COM-SPECS>
                 <NONQUEUED-RECEIVER-COM-SPEC>
-                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/analogueInput/ADCinput</DATA-ELEMENT-REF>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/digitalOutput/outputStatus</DATA-ELEMENT-REF>
                   <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
                 </NONQUEUED-RECEIVER-COM-SPEC>
               </REQUIRED-COM-SPECS>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/analogueInput</REQUIRED-INTERFACE-TREF>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/digitalOutput</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="485D2F6E-38D6-4FCF-8A42-1782B0532562">
               <SHORT-NAME>motorStop</SHORT-NAME>
@@ -50,14 +55,6 @@
                   <SHORT-NAME>pinchDetector_InitEvent</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/pinchDetector/pinchDetector_InternalBehavior/pinchDetector_Init</START-ON-EVENT-REF>
                 </INIT-EVENT>
-                <DATA-RECEIVED-EVENT UUID="C5FF9749-834E-4D5D-8383-9A2E1EEF5D73">
-                  <SHORT-NAME>DRT_pinchEventHandler_pinchADC_ADCinput</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/pinchDetector/pinchDetector_InternalBehavior/pinchEventHandler</START-ON-EVENT-REF>
-                  <DATA-IREF>
-                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/pinchDetector/pinchADC</CONTEXT-R-PORT-REF>
-                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/analogueInput/ADCinput</TARGET-DATA-ELEMENT-REF>
-                  </DATA-IREF>
-                </DATA-RECEIVED-EVENT>
               </EVENTS>
               <RUNNABLES>
                 <RUNNABLE-ENTITY UUID="444DA83E-1B9C-4733-907B-52A9EAFBF88C">
@@ -84,17 +81,6 @@
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY UUID="3E1FED2A-1601-4195-ACCF-D74584329A10">
                   <SHORT-NAME>pinchEventHandler</SHORT-NAME>
-                  <DATA-RECEIVE-POINT-BY-VALUES>
-                    <VARIABLE-ACCESS UUID="E27FE655-ACA4-4A99-A8F0-12465FF06806">
-                      <SHORT-NAME>REC_pinchADC_ADCinput</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/pinchDetector/pinchADC</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/analogueInput/ADCinput</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                    </VARIABLE-ACCESS>
-                  </DATA-RECEIVE-POINT-BY-VALUES>
                   <DATA-SEND-POINTS>
                     <VARIABLE-ACCESS UUID="C4E84FFA-6F53-40BE-A261-001F6E5D59AD">
                       <SHORT-NAME>SEND_motorStop_outputStatus</SHORT-NAME>

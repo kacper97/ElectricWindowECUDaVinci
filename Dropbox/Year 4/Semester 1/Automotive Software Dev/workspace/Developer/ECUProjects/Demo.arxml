@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="61003142-B3ED-41FD-A9BA-A9125713054B">
+      <SHORT-NAME>ECUCompositionType</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="D756F223-D6FB-472E-8804-47F306B4FEBA">
+          <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="AEC2030F-383B-439E-8433-5FEDEE62251B">
+              <SHORT-NAME>PiLightState</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiLightState</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="53AD3DA1-EC1D-419E-83DF-6CD685C23773">
+              <SHORT-NAME>pp_TxE2eProtected</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxE2eProtected/sgTx_E2eProt</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
+                  <INIT-VALUE>
+                    <RECORD-VALUE-SPECIFICATION>
+                      <FIELDS>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_2</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_3</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_4</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_5</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_6</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </FIELDS>
+                    </RECORD-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_TxE2eProtected</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="EDF3732B-FEC6-4977-9C55-9953D850B1C1">
+              <SHORT-NAME>pp_TxMulti0_1</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxMulti0_1/deTxMulti0_1</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_TxMulti0_1</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="FA26AEBA-B02A-41D6-B040-A14161F56A4E">
+              <SHORT-NAME>pp_TxMulti0_2</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxMulti0_2/deTxMulti0_2</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_TxMulti0_2</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="BBA50678-ACAF-4752-A6BA-00058A8232D2">
+              <SHORT-NAME>pp_TxMulti0_3</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxMulti0_3/deTxMulti0_3</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_TxMulti0_3</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="65EC3761-9358-4239-A32A-8EE79C75B467">
+              <SHORT-NAME>PiDoorStateRearLeft</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="3F477FB5-F251-4C7C-A296-D96834BD4356">
+              <SHORT-NAME>PiDoorStateRearRight</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/PiDoorState</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="71DE716B-30EF-4BCA-9F1D-4080F295010A">
+              <SHORT-NAME>piEventSignal_RxUint16_CAN</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/piEventSignal_RxUint16_CAN/deEventSignal_RxUint16_CAN</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>25</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/piEventSignal_RxUint16_CAN</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="D87230B2-F6EC-4C37-96D0-B2DCDF3100F3">
+              <SHORT-NAME>piEventSignal_RxUint32_FR</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/piEventSignal_RxUint32_FR/deEventSignal_RxUint32_FR</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>1</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/piEventSignal_RxUint32_FR</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="51EBA8E2-6EC1-4260-90E6-3AB9056CFB5E">
+              <SHORT-NAME>pp_RxE2eProtected</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxE2eProtected/sgRx_E2eProt</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>true</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <RECORD-VALUE-SPECIFICATION>
+                      <FIELDS>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_2</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_3</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_4</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>ElementConstant_5</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </FIELDS>
+                    </RECORD-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_RxE2eProtected</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="5E659F5D-ABD4-4B38-B933-9E97D22C8F2A">
+              <SHORT-NAME>pp_RxMulti0_0</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxMulti0_0/deRxMulti0_0</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_RxMulti0_0</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="6CB132BB-401A-4EA3-8DEC-5710AC753E20">
+              <SHORT-NAME>pp_RxMulti0_1</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxMulti0_1/deRxMulti0_1</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_RxMulti0_1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="338B3CC9-EB31-4778-B6EF-4C19790551D2">
+              <SHORT-NAME>pp_RxMulti0_2</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxMulti0_2/deRxMulti0_2</DATA-ELEMENT-REF>
+                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                  <FILTER>
+                    <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                  </FILTER>
+                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                  <INIT-VALUE>
+                    <APPLICATION-VALUE-SPECIFICATION>
+                      <CATEGORY>VALUE</CATEGORY>
+                      <SW-VALUE-CONT>
+                        <SW-VALUES-PHYS>
+                          <V>0</V>
+                        </SW-VALUES-PHYS>
+                      </SW-VALUE-CONT>
+                    </APPLICATION-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/PortInterfaces/pi_RxMulti0_2</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="C5EF28DB-A02E-4D74-A349-D222F5962920">
+              <SHORT-NAME>CpCoApplication</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ComponentTypes/CtCoApplication</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="2BFCBA67-4DA1-4118-AF86-7561FF3C06EE">
+              <SHORT-NAME>CtCryptoDemo</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtCryptoDemo</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="9D1E0FBE-43B8-48C6-8B50-6543BA2783B1">
+              <SHORT-NAME>CtDiagDemo</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtDiagDemo</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="BC9C6FC9-2941-4D68-B692-54FFFFD8983F">
+              <SHORT-NAME>CtDltDemo</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtDltDemo</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="3BBF4A31-E590-4123-95C6-1F850A14E735">
+              <SHORT-NAME>CtE2eCommunication</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtE2eCommunication</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="1A921C9B-5F19-4C02-8FC9-1E23930A2C88">
+              <SHORT-NAME>CtFimDemo</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/CtFimDemo</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <ASSEMBLY-SW-CONNECTOR UUID="DD542CCD-F72E-4571-BACF-0FE69F8F4146">
+              <SHORT-NAME>CtDiagDemoDDiagDemo_ResetConfirmationDCpCoApplicationDApMySwc_ResetConfirmation</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtDiagDemo</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtDiagDemo/DiagDemo_ResetConfirmation</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/ApMySwc_ResetConfirmation</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="D0AE761D-3435-4643-8BB0-E5DC99BA0AAA">
+              <SHORT-NAME>PiDoorStateRearLeftDDCpCoApplicationDPpDoorStateRearLeft</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpDoorStateRearLeft</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiDoorStateRearLeft</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="24DB6B8F-F00E-4319-92A6-A721ECFDE1ED">
+              <SHORT-NAME>PiDoorStateRearRightDDCpCoApplicationDPpDoorStateRearRight</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpDoorStateRearRight</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiDoorStateRearRight</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="501D8EFC-2BCD-43EB-AEDC-950DFFF035C1">
+              <SHORT-NAME>piEventSignal_RxUint16_CANDDCtDltDemoDpiEventSignal_RxUint16_CAN</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtDltDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtDltDemo/piEventSignal_RxUint16_CAN</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/piEventSignal_RxUint16_CAN</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="09670262-E8C1-44E5-8E5D-0AF5317D8D5C">
+              <SHORT-NAME>piEventSignal_RxUint32_FRDDCtDltDemoDpiEventSignal_RxUint32_FR</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtDltDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtDltDemo/piEventSignal_RxUint32_FR</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/piEventSignal_RxUint32_FR</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="6FA8ABDC-779A-4FE1-A4C9-2CD440B8DF6C">
+              <SHORT-NAME>PiLightStateDDCpCoApplicationDPpLightStateRear</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CpCoApplication</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCoApplication/PpLightStateRear</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiLightState</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="56D04332-03C1-4733-BC22-B6D1468A23AB">
+              <SHORT-NAME>pp_RxE2eProtectedDDCtE2eCommunicationDpp_RxE2eProtected</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtE2eCommunication</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtE2eCommunication/pp_RxE2eProtected</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_RxE2eProtected</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="A23F20D7-CC5E-4324-AC82-D6E8CE185257">
+              <SHORT-NAME>pp_RxMulti0_0DDCtCryptoDemoDpp_RxMulti0_0</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_RxMulti0_0</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_RxMulti0_0</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="471815EF-2003-487D-BBEF-C892AFFB2FED">
+              <SHORT-NAME>pp_RxMulti0_1DDCtCryptoDemoDpp_RxMulti0_1</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_RxMulti0_1</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_RxMulti0_1</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="AD0B9AC1-1E16-43C9-A859-B8E21D0CC409">
+              <SHORT-NAME>pp_RxMulti0_2DDCtCryptoDemoDpp_RxMulti0_2</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_RxMulti0_2</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_RxMulti0_2</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="461A635D-81A8-432E-995F-4A5020B87837">
+              <SHORT-NAME>pp_TxE2eProtectedDDCtE2eCommunicationDpp_TxE2eProtected</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtE2eCommunication</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtE2eCommunication/pp_TxE2eProtected</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_TxE2eProtected</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="EE2BB4D4-3AD2-471F-B6E1-9D06C03B51C1">
+              <SHORT-NAME>pp_TxMulti0_1DDCtCryptoDemoDpp_TxMulti0_1</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_TxMulti0_1</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_TxMulti0_1</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="BECB1959-11BF-4CF8-AC6D-CDA7C0D9E8F8">
+              <SHORT-NAME>pp_TxMulti0_2DDCtCryptoDemoDpp_TxMulti0_2</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_TxMulti0_2</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_TxMulti0_2</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR UUID="A3EF5F7E-9288-4C3B-974C-B3194C5FE818">
+              <SHORT-NAME>pp_TxMulti0_3DDCtCryptoDemoDpp_TxMulti0_3</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtCryptoDemo</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtCryptoDemo/pp_TxMulti0_3</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_TxMulti0_3</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="4E53F7E3-91B8-42ED-B801-0F5D66F6DEE8">
+      <SHORT-NAME>EndToEndProtection</SHORT-NAME>
+      <ELEMENTS>
+        <END-TO-END-PROTECTION-SET UUID="A52A1C3F-E2C9-4635-881A-D7E4A271DB90">
+          <SHORT-NAME>EndToEndConnections</SHORT-NAME>
+          <END-TO-END-PROTECTIONS>
+            <END-TO-END-PROTECTION UUID="08B710B1-EB51-4025-A7AB-0A3B1ED9EB89">
+              <SHORT-NAME>Ext_ECU_Composition_pp_RxE2eProtected_sgRx_E2eProt</SHORT-NAME>
+              <END-TO-END-PROFILE>
+                <CATEGORY>PROFILE_01</CATEGORY>
+                <DATA-IDS>
+                  <DATA-ID>1</DATA-ID>
+                </DATA-IDS>
+                <DATA-ID-MODE>3</DATA-ID-MODE>
+                <DATA-LENGTH>56</DATA-LENGTH>
+                <MAX-DELTA-COUNTER-INIT>0</MAX-DELTA-COUNTER-INIT>
+                <CRC-OFFSET>0</CRC-OFFSET>
+                <COUNTER-OFFSET>8</COUNTER-OFFSET>
+                <DATA-ID-NIBBLE-OFFSET>12</DATA-ID-NIBBLE-OFFSET>
+              </END-TO-END-PROFILE>
+              <END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                <END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                  <RECEIVER-IREFS>
+                    <RECEIVER-IREF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtE2eCommunication</CONTEXT-COMPONENT-REF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/CtE2eCommunication/pp_RxE2eProtected</CONTEXT-PORT-REF>
+                      <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxE2eProtected/sgRx_E2eProt</TARGET-DATA-PROTOTYPE-REF>
+                    </RECEIVER-IREF>
+                  </RECEIVER-IREFS>
+                </END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+              </END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+            </END-TO-END-PROTECTION>
+            <END-TO-END-PROTECTION UUID="A10336A1-214A-4CBE-BE3A-C6809260B529">
+              <SHORT-NAME>Ext_ECU_Composition_pp_TxE2eProtected_sgTx_E2eProt</SHORT-NAME>
+              <END-TO-END-PROFILE>
+                <CATEGORY>PROFILE_01</CATEGORY>
+                <DATA-IDS>
+                  <DATA-ID>1</DATA-ID>
+                </DATA-IDS>
+                <DATA-ID-MODE>3</DATA-ID-MODE>
+                <DATA-LENGTH>56</DATA-LENGTH>
+                <MAX-DELTA-COUNTER-INIT>0</MAX-DELTA-COUNTER-INIT>
+                <CRC-OFFSET>0</CRC-OFFSET>
+                <COUNTER-OFFSET>8</COUNTER-OFFSET>
+                <DATA-ID-NIBBLE-OFFSET>12</DATA-ID-NIBBLE-OFFSET>
+              </END-TO-END-PROFILE>
+              <END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+                <END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+                  <SENDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUCompositionType/ECU_Composition/CtE2eCommunication</CONTEXT-COMPONENT-REF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentTypes/CtE2eCommunication/pp_TxE2eProtected</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxE2eProtected/sgTx_E2eProt</TARGET-DATA-PROTOTYPE-REF>
+                  </SENDER-IREF>
+                </END-TO-END-PROTECTION-VARIABLE-PROTOTYPE>
+              </END-TO-END-PROTECTION-VARIABLE-PROTOTYPES>
+            </END-TO-END-PROTECTION>
+          </END-TO-END-PROTECTIONS>
+        </END-TO-END-PROTECTION-SET>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="001B74C8-D206-43CC-8E7B-4457ECD61DB2">
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM UUID="DC534ADE-5FEF-4E99-B30B-5E99C415416D">
+          <SHORT-NAME>System</SHORT-NAME>
+          <CATEGORY>SYSTEM_EXTRACT</CATEGORY>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV_SDG:ECUProject">
+                <SDG-CAPTION>
+                  <SHORT-NAME>ECUProject_DVehicleProjectDDemo</SHORT-NAME>
+                </SDG-CAPTION>
+                <SD GID="ShortName">Demo</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">BswM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">ComM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">Csm_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">Dcm_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">Dem_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:32:00</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">Det_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">Dlt_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:32:00</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">EcuM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">FiM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">IoHwAb_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">NvM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">StbM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2015-12-10_14:31:59</SD>
+              </SDG>
+              <SDG GID="DV:ExternalFile">
+                <SD GID="DV:Path">WdgM_swc.arxml</SD>
+                <SD GID="DV:TimeStamp">2017-03-14_20:56:29</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <MAPPINGS>
+            <SYSTEM-MAPPING UUID="DB1622EA-9047-4B04-B780-B49B81908CD2">
+              <SHORT-NAME>System_MPPNG</SHORT-NAME>
+              <DATA-MAPPINGS>
+                <SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_TxE2eProtected</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_TxE2eProtected/sgTx_E2eProt</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/Signal/SG_SgTx_Prof1C_TxCycle</SIGNAL-GROUP-REF>
+                  <TYPE-MAPPING>
+                    <SENDER-REC-RECORD-TYPE-MAPPING>
+                      <RECORD-ELEMENT-MAPPINGS>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_SQ</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_SQ</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_DataId</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_DataId_HiByte_LoNib</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_CRC</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_CRC</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_8Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_Sig8Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_4Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_Sig4Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_2Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_Sig2Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recTx_E2eProt/reTx_E2eProt_16Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigTx_Prof1C_Sig16Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                      </RECORD-ELEMENT-MAPPINGS>
+                    </SENDER-REC-RECORD-TYPE-MAPPING>
+                  </TYPE-MAPPING>
+                </SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiDoorStateRearLeft</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Signal_RearLeftDoor</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiDoorStateRearRight</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiDoorState/DeDoorState</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Signal_RearRightDoor</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/pp_RxE2eProtected</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/pi_RxE2eProtected/sgRx_E2eProt</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/Signal/SG_RgRx_Prof1C_RxCycle</SIGNAL-GROUP-REF>
+                  <TYPE-MAPPING>
+                    <SENDER-REC-RECORD-TYPE-MAPPING>
+                      <RECORD-ELEMENT-MAPPINGS>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_SQ</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_SQ</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_DataId</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_DataId_HiByte_LoNib</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_CRC</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_CRC</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_4Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_Sig4Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_3Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_Sig3Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                        <SENDER-REC-RECORD-ELEMENT-MAPPING>
+                          <IMPLEMENTATION-RECORD-ELEMENT-REF DEST="IMPLEMENTATION-DATA-TYPE-ELEMENT">/DataTypes/recRx_E2eProt/reRx_E2eProt_32Bit</IMPLEMENTATION-RECORD-ELEMENT-REF>
+                          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/SigRx_Prof1C_Sig32Bit</SYSTEM-SIGNAL-REF>
+                        </SENDER-REC-RECORD-ELEMENT-MAPPING>
+                      </RECORD-ELEMENT-MAPPINGS>
+                    </SENDER-REC-RECORD-TYPE-MAPPING>
+                  </TYPE-MAPPING>
+                </SENDER-RECEIVER-TO-SIGNAL-GROUP-MAPPING>
+                <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  <DATA-ELEMENT-IREF>
+                    <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VehicleProject/System/ECU_Composition</CONTEXT-COMPOSITION-REF>
+                    <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUCompositionType/ECU_Composition/PiLightState</CONTEXT-PORT-REF>
+                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/PiLightState/DeLightState</TARGET-DATA-PROTOTYPE-REF>
+                  </DATA-ELEMENT-IREF>
+                  <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Signal_SwitchRearInteriorLight</SYSTEM-SIGNAL-REF>
+                </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+              </DATA-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="4FA30714-F689-489F-B416-CD026D601D2C">
+              <SHORT-NAME>ECU_Composition</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUCompositionType/ECU_Composition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

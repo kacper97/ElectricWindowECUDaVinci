@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="778DE440-12B3-4C20-9567-E87CB119992B">
+      <SHORT-NAME>ComponentTypes</SHORT-NAME>
+      <ELEMENTS>
+        <NV-BLOCK-SW-COMPONENT-TYPE UUID="A20EE297-9FD2-42F5-836F-C44A6895EBB8">
+          <SHORT-NAME>ctNvApp</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="9A9BBEBC-80E7-46B1-BC63-1433419317D6">
+              <SHORT-NAME>piAdcValue</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NV-REQUIRE-COM-SPEC>
+                  <INIT-VALUE>
+                    <NUMERICAL-VALUE-SPECIFICATION>
+                      <VALUE>255</VALUE>
+                    </NUMERICAL-VALUE-SPECIFICATION>
+                  </INIT-VALUE>
+                  <VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/piAdcValue/deAdcValue</VARIABLE-REF>
+                </NV-REQUIRE-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="NV-DATA-INTERFACE">/PortInterfaces/piAdcValue</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="41D42659-BB47-4CC5-87D7-F9B3B7B9D4F8">
+              <SHORT-NAME>ctNvApp_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <DATA-RECEIVED-EVENT UUID="09A988E9-161E-4A7E-A5E4-1BC27DCE4AB4">
+                  <SHORT-NAME>DRT_NvM_AdcValue_IoHwAb_Get_Adc_Signals_piAdcValue_deAdcValue</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentTypes/ctNvApp/ctNvApp_InternalBehavior/NvM_AdcValue_IoHwAb_Get_Adc_Signals</START-ON-EVENT-REF>
+                  <DATA-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/ctNvApp/piAdcValue</CONTEXT-R-PORT-REF>
+                    <TARGET-DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/piAdcValue/deAdcValue</TARGET-DATA-ELEMENT-REF>
+                  </DATA-IREF>
+                </DATA-RECEIVED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="894EACB5-694C-40DD-B1EA-533055C9142C">
+                  <SHORT-NAME>NvM_AdcValue_IoHwAb_Get_Adc_Signals</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>NvM_AdcValue_IoHwAb_Get_Adc_Signals</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+          <NV-BLOCK-DESCRIPTORS>
+            <NV-BLOCK-DESCRIPTOR UUID="C029B296-9609-48F2-9542-674D2DB41681">
+              <SHORT-NAME>NVBlock_AdcValue</SHORT-NAME>
+              <NV-BLOCK-DATA-MAPPINGS>
+                <NV-BLOCK-DATA-MAPPING>
+                  <NV-RAM-BLOCK-ELEMENT>
+                    <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentTypes/ctNvApp/NVBlock_AdcValue/RAM_NVBlock_AdcValue</LOCAL-VARIABLE-REF>
+                  </NV-RAM-BLOCK-ELEMENT>
+                  <WRITTEN-NV-DATA>
+                    <AUTOSAR-VARIABLE-IREF>
+                      <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentTypes/ctNvApp/piAdcValue</PORT-PROTOTYPE-REF>
+                      <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/PortInterfaces/piAdcValue/deAdcValue</TARGET-DATA-PROTOTYPE-REF>
+                    </AUTOSAR-VARIABLE-IREF>
+                  </WRITTEN-NV-DATA>
+                </NV-BLOCK-DATA-MAPPING>
+              </NV-BLOCK-DATA-MAPPINGS>
+              <NV-BLOCK-NEEDS UUID="08402600-AFA4-4BD9-B2EA-DF8EF29AC634">
+                <SHORT-NAME>NVNeed_NVBlock_AdcValue</SHORT-NAME>
+                <ADMIN-DATA>
+                  <SDGS>
+                    <SDG GID="DV_SDG">
+                      <SD GID="AutoServiceNeedNameHdlg">1</SD>
+                      <SD GID="BlockSize">0</SD>
+                    </SDG>
+                  </SDGS>
+                </ADMIN-DATA>
+                <CALC-RAM-BLOCK-CRC>false</CALC-RAM-BLOCK-CRC>
+                <CHECK-STATIC-BLOCK-ID>false</CHECK-STATIC-BLOCK-ID>
+                <N-DATA-SETS>0</N-DATA-SETS>
+                <RAM-BLOCK-STATUS-CONTROL>API</RAM-BLOCK-STATUS-CONTROL>
+                <READONLY>false</READONLY>
+                <RELIABILITY>NO-PROTECTION</RELIABILITY>
+                <RESISTANT-TO-CHANGED-SW>true</RESISTANT-TO-CHANGED-SW>
+                <RESTORE-AT-START>true</RESTORE-AT-START>
+                <STORE-AT-SHUTDOWN>false</STORE-AT-SHUTDOWN>
+                <STORE-CYCLIC>false</STORE-CYCLIC>
+                <STORE-EMERGENCY>false</STORE-EMERGENCY>
+                <STORE-IMMEDIATE>true</STORE-IMMEDIATE>
+                <USE-AUTO-VALIDATION-AT-SHUT-DOWN>false</USE-AUTO-VALIDATION-AT-SHUT-DOWN>
+                <USE-CRC-COMP-MECHANISM>false</USE-CRC-COMP-MECHANISM>
+                <WRITE-ONLY-ONCE>false</WRITE-ONLY-ONCE>
+                <WRITE-VERIFICATION>true</WRITE-VERIFICATION>
+                <WRITING-PRIORITY>LOW</WRITING-PRIORITY>
+              </NV-BLOCK-NEEDS>
+              <RAM-BLOCK UUID="F22A82DD-36D0-45E5-8C6D-1720F095909E">
+                <SHORT-NAME>RAM_NVBlock_AdcValue</SHORT-NAME>
+                <SW-DATA-DEF-PROPS>
+                  <SW-DATA-DEF-PROPS-VARIANTS>
+                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                      <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                  </SW-DATA-DEF-PROPS-VARIANTS>
+                </SW-DATA-DEF-PROPS>
+                <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                <INIT-VALUE>
+                  <NUMERICAL-VALUE-SPECIFICATION>
+                    <VALUE>0</VALUE>
+                  </NUMERICAL-VALUE-SPECIFICATION>
+                </INIT-VALUE>
+              </RAM-BLOCK>
+              <SUPPORT-DIRTY-FLAG>true</SUPPORT-DIRTY-FLAG>
+            </NV-BLOCK-DESCRIPTOR>
+          </NV-BLOCK-DESCRIPTORS>
+        </NV-BLOCK-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="B26015B4-4267-434A-B6D8-37420B9A476E">
+          <SHORT-NAME>ctNvApp_Implementation</SHORT-NAME>
+          <CODE-DESCRIPTORS>
+            <CODE UUID="6CACFE8D-AD2F-4EEE-8078-C066D3A916A0">
+              <SHORT-NAME>Default</SHORT-NAME>
+              <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <SHORT-LABEL>Default</SHORT-LABEL>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+              </ARTIFACT-DESCRIPTORS>
+            </CODE>
+          </CODE-DESCRIPTORS>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentTypes/ctNvApp/ctNvApp_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
